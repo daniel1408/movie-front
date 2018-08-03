@@ -1,0 +1,23 @@
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div *ngFor="let item of movies" style="display: inline-block; padding:5px;">
+        <div class="card" style="width: 9rem;">
+          <a [routerLink] = "[item.id]">
+              <img class="card-img-top" src="{{item.Poster}}" alt="Card image cap" style="width: 100%;">
+          </a>
+          <div>
+              <p>{{item.Title}}</p>
+          </div>
+          <div>
+              <p>IMDB:<b> {{item.imdbRating}}</b></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
